@@ -1,6 +1,5 @@
-const axios = require(axios)
-
 exports.orderHandler = async(req, res) => {
+  const axios = require(axios)
   const orderID = req.id
 
   const orderItems = await axios.get('https://www.bluepeaks.biz/api/v1/orders/' + orderID + '/items',{

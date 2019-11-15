@@ -29,3 +29,7 @@ exports.orderHandler = async(req, res) => {
   }
  return orderProducts
 }
+
+exports.helloGET = (req, res) => {
+  res.send('Hello from Cloud Functions and Cloud Source Repositories');
+};

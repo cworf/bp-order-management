@@ -27,5 +27,5 @@ exports.orderHandler = async(req, res) => {
     const product = productArray[i].
     orderProducts[product.item_number] = product
   }
-
+ return orderProducts
 }
